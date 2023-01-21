@@ -7,7 +7,7 @@ csvreader = csv.reader(file)
 data = list(csvreader)
 n = len(data)
 prev_changes = []
-
+# we are using rate of change
 for i in range(2, n):
     # change = (yesterday's price - today's price) / yesterday's price
     prev_changes.append((float(data[i-1][1])-float(data[i][1]))/float(data[i-1][1]))
