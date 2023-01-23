@@ -2,6 +2,8 @@ import csv
 import random
 import matplotlib.pyplot as plt
 
+
+# My Comment Mustaa
 file = open('IIM.csv', 'r')
 csvreader = csv.reader(file)
 data = list(csvreader)
